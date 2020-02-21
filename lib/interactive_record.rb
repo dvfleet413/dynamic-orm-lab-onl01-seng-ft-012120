@@ -57,6 +57,7 @@ class InteractiveRecord
       sql = "SELECT * FROM #{self.table_name} WHERE #{key.to_s} = ?"
       DB[:conn].execute(sql, value)[0]
     end 
+    binding.pry
   end
     
   
